@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+
+{% block title %}EasySchool - Alunos{% endblock %} 
+
+{% block content %}
+  <h1 class="mb-4">Alunos</h1>
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in students %}
+      <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.lastname }}</td>
+        <td>{{ student.email }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
