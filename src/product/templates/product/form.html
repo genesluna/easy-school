@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}EasySchool - Products Form{% endblock %}
+
+{% block content %}
+
+  <h1>{{ title }}</h1>
+
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a href="{% url 'product:list_products' %}" class="btn btn-secondary">Cancelar</a>
+  </form>
+
+{% endblock %}
