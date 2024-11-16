@@ -38,7 +38,7 @@ class ListProductsView(ListView):
         return context
 
 
-class CreateStudentView(SuccessMessageMixin, CreateView):
+class CreateProductView(SuccessMessageMixin, CreateView):
 
     template_name = "product/form.html"
     model = Product
