@@ -6,3 +6,5 @@ from src.student.views import ListStudentsView
 urlpatterns = [
     path("", ListStudentsView.as_view(), name="list_students"),
 ]
+
+app_name = "student"
