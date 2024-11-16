@@ -1,36 +1,35 @@
 # 🧑‍🏫 EasySchool
 
-Este aplicativo foi concebido para a disciplina de back-end do curso ADS do CESMAC. O objetivo é criar um mini sistema de gerenciamento de escolas usando python e o framework Django.
+Este aplicativo foi concebido para a disciplina de back-end do curso de ADS do CESMAC. O objetivo é criar um mini sistema de gerenciamento de escolas usando python e o framework Django.
 
-Essa `branch (ea1)` está relacionada com a primeira parte do projeto que consiste dos seguintes passos:
+Essa `branch (ea2)` está relacionada à segunda parte do projeto que consiste dos seguintes passos:
 
 ### 📝 Passos
 
 **Passo 1**:
 
-- Criar o modelo `Aluno` com os campos:
+- Crie o modelo de `Produto` em models.py com os seguintes atributos::
   - `nome`
-  - `sobrenome`
-  - `email`
+  - `descrição`
+  - `preço`
+  - `validade`
 
 **Passo 2**:
 
-- Criar o modelo `Curso` com os campos:
-  - `titulo`
-  - `descricao`
-- Relacionamento: Um aluno pode estar matriculado em vários cursos.
+- Agora, devemos construir nosso template geral chamado `base.html`. Crie o template `base.html` contendo um bloco (block) chamado content.
 
 **Passo 3**:
 
-- Configurar o Django Admin para cadastrar alunos.
-- Criar uma URL e uma view para exibir os alunos cadastrados.
-- Criar templates para exibir a lista de alunos.
+- Devemos poder cadastrar novos produtos no sistema sem ser pelo Django Admin.
+- Crie um formulário em forms.py chamado ProdutoForm com os respectivos dados do modelo.
 
 **Passo 4**:
 
-- Configurar o Django Admin para cadastrar cursos.
-- Criar uma URL e uma view para exibir os cursos cadastrados.
-- Criar templates para exibir a lista de cursos.
+- Por fim, devemos criar em views.py uma view (função) chamada:
+
+  produto_new(request): …
+
+- Nesta view, carregue o formulário e insira no banco de dados as informações necessárias
 
 ## ⚙️ Instalação
 
