@@ -1,0 +1,37 @@
+@host = http://127.0.0.1:8000/api
+@username = admin
+@password = admin
+
+### Authenticate
+# @name authLogin
+POST {{host}}/auth/login/
+content-type: application/json
+
+{
+    "username": "{{username}}",
+    "password": "{{password}}"
+}
+
+### Store JWT TOKENS
+@token = {{authLogin.response.body.access}}
+@refresh = {{authLogin.response.body.refresh}}
+
+### Get courses
+GET {{host}}/courses/ 
+Authorization: Bearer {{token}}
+
+### Get students
+GET {{host}}/students/
+Authorization: Bearer {{token}}
+
+### Get products
+GET {{host}}/products/ 
+Authorization: Bearer {{token}}
+
+### Refresh token
+POST {{host}}/auth/refresh/
+content-type: application/json
+
+{
+    "refresh": "{{refresh}}"
+}
