@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     "src.course",
     "src.student",
     "src.product",
+    "src.api",
 ]
+
+THIRD_PARTY_APPS = ["rest_framework"]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -101,6 +104,8 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+REST_FRAMEWORK = {"DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",)}
 
 
 # Internationalization
