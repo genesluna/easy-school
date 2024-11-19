@@ -1,4 +1,4 @@
-# 🧑‍🏫 EasySchool
+# 🧑‍🏫 EasySchool (EA2)
 
 Este aplicativo foi concebido para a disciplina de back-end do curso de ADS do CESMAC. O objetivo é criar um mini sistema de gerenciamento de escolas usando python e o framework Django.
 
