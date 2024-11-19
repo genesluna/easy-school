@@ -1,8 +1,8 @@
-# 🧑‍🏫 EasySchool
+# 🧑‍🏫 EasySchool (EA3)
 
 Este aplicativo foi concebido para a disciplina de back-end do curso de ADS do CESMAC. O objetivo é criar um mini sistema de gerenciamento de escolas usando python e o framework Django.
 
-Essa `branch (ea3)` está relacionada à segunda parte do projeto que consiste dos seguintes passos:
+Essa `branch (ea3)` está relacionada à terceira parte do projeto que consiste dos seguintes passos:
 
 ### 📝 Passos
 
